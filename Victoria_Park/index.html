@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria Park Marseille</title>
+  <style>
+    /* ====== RESET ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #388e3c;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* ===== HERO SLIDER ===== */
+    .hero-slider {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    /* Зображення для слайдів */
+    .slide:nth-child(1) {
+      background-image: url('sport.jpg');
+    }
+
+    .slide:nth-child(2) {
+      background-image: url('sejour.jpg');
+    }
+
+    .slide:nth-child(3) {
+      background-image: url('facade.jpg');
+    }
+
+    .slide:nth-child(4) {
+      background-image: url('divers1.jpg');
+    }
+
+    /* ===== SECTION ===== */
+    .section {
+      padding: 40px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-left: 20px;
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Résidence Étudiante Victoria Park</h1>
+    <p>Un cadre vert et calme au cœur de Marseille</p>
+  </header>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== HERO SLIDER ===== -->
+  <div class="hero-slider">
+    <div class="slide active">Bienvenue à Victoria Park</div>
+    <div class="slide">Découvrez nos jardins élégants</div>
+    <div class="slide">Profitez du calme et de la nature</div>
+    <div class="slide">Réservez votre visite aujourd'hui</div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <div class="section" id="about">
+    <h2>À propos de la résidence</h2>
+    <p>Située au 5 rue Augustin Fresnel, dans le quartier Château-Gombert, la résidence Victoria Park propose des studios et appartements T1 à T3 pour étudiants. À proximité du Technopôle et des Grandes Écoles, elle offre un cadre paisible, verdoyant et bien desservi.</p>
+  </div>
+
+  <!-- ===== SERVICES ===== -->
+  <div class="section" id="services">
+    <h2>Services inclus</h2>
+    <ul>
+      <li>Ascenseur</li>
+      <li>Contrôle d'accès</li>
+      <li>Accueil</li>
+      <li>Interphone</li>
+      <li>WiFi</li>
+      <li>Salle de sport</li>
+      <li>Local vélos</li>
+    </ul>
+    <h3>Services optionnels</h3>
+    <ul>
+      <li>Buanderie</li>
+      <li>Parking</li>
+      <li>Photocopieur</li>
+      <li>Service ménage</li>
+    </ul>
+  </div>
+
+	<div class="section" id="documents">
+	  <h2>Documents nécessaires pour la résidence</h2>
+	  <p>Pour votre inscription à la résidence Victoria Park, veuillez fournir les documents suivants :</p>
+	  <ul>
+		<li><strong>Pièce d'identité ou passeport :</strong> pour identification</li>
+		<li><strong>Permis de séjour / récépissé :</strong> si vous êtes étranger</li>
+		<li><strong>Justificatif de domicile :</strong> facture d'électricité, contrat de location, etc.</li>
+		<li><strong>Attestation d'inscription / certificat étudiant :</strong> prouvant votre statut d'étudiant</li>
+		<li><strong>Garant / contact de garant :</strong> pour couvrir d'éventuels impayés</li>
+		<li><strong>Preuve de ressources financières :</strong> relevé bancaire, contrat de travail, bourse, etc.</li>
+		<li><strong>Assurance habitation :</strong> obligatoire pour les locataires en France</li>
+		<li><strong>Contrat de location signé :</strong> officialisant votre logement</li>
+		<li><strong>Relevé d'identité bancaire (RIB) :</strong> pour les paiements du loyer et dépôt de garantie</li>
+	  </ul>
+	  <p>Assurez-vous de préparer tous les documents avant votre arrivée pour faciliter votre installation.</p>
+	</div>
+
+
+  <!-- ===== CONTACT ===== -->
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p><strong>Adresse :</strong> 5 rue Augustin Fresnel, 13013 Marseille</p>
+ <!--    <p><strong>Téléphone :</strong> +33 (0)9 69 39 08 98</p>
+    <p><strong>Email :</strong> webmaster@estudines.com</p>  -->
+  </div>
+
+  <footer>
+    &copy; 2025 Les Estudines - Victoria Park Marseille
+  </footer>
+
+  <!-- ===== SCRIPT SLIDER ===== -->
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function nextSlide() {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }
+
+    setInterval(nextSlide, 5000); // кожні 5 секунд
+  </script>
+
+</body>
+</html>
 
