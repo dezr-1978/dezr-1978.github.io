@@ -171,26 +171,31 @@
   </section>
 
   <section class="card">
-    <h2>Повідомити інформацію</h2>
-    <p class="note">Маєте докази або спостереження? Повідомте через форму нижче або за контактами.</p>
-
+    <h2>Повідомити інформацію (анкета)</h2>
     <form action="/submit-tip" method="post" enctype="multipart/form-data">
-      <label for="type">Тип повідомлення</label>
-      <select id="type" name="type">
-        <option>Відомості про підозрюваного</option>
-        <option>Цифрові докази (логи, скріни)</option>
-        <option>Анонімна інформація</option>
-      </select>
-
-      <label for="message">Опис</label>
-      <textarea id="message" name="message" rows="4" placeholder="Введіть суть повідомлення..."></textarea>
-
+      <label>Тип повідомлення</label>
+      <select name="type"><option>Відома інформація</option><option>Анонімна підказка</option><option>Файли/докази</option></select>
+      <label>Короткий опис</label>
+      <textarea name="message" rows="4" placeholder="Опишіть, що відомо..."></textarea>
       <div class="row">
-        <div>
-          <label for="name">Ім’я (необов’язково)</label>
-          <input id="name" name="name" type="text" placeholder="Анонім або ім’я">
-        </div>
-        <div>
-          <label for="contact">Контакт (email/телефон)</label>
-          <input id="contact" name="contact" type="text" placeholder="Опціонально">
-       
+        <div><label>Ім'я (за бажанням)</label><input name="name" type="text" placeholder="Ваше ім'я (необов'язково)"></div>
+        <div><label>Телефон або email</label><input name="contact" type="text" placeholder="Телефон або email (необов'язково)"></div>
+      </div>
+      <label>Завантажити файли (скриншоти, логи)</label>
+      <input name="attachment" type="file" accept=".png,.jpg,.jpeg,.pdf,.zip">
+      <button type="submit" style="margin-top:12px;background:var(--accent);color:#fff;border:0;padding:12px;border-radius:8px">Надіслати повідомлення</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Правова заява</h2>
+    <p>Усі повідомлення обробляються відповідно до законодавства про захист персональних даних. Поширення неправдивої інформації тягне відповідальність.</p>
+    <p class="small">Якщо у вас є великі обсяги даних (лог-файли, розпис транзакцій) — зверніться через захищені канали або особисто до відділення.</p>
+  </section>
+</main>
+
+<footer>
+  © Департамент електронної поліції — Контакт: tips@epolice.gov.ua | Телефон: 0xx-xxx-xxxx
+</footer>
+</body>
+</html>
