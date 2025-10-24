@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Розшук — Департамент електронної політики</title>
+  <meta name="description" content="Оперативна інформація щодо інциденту із шкідливим ПЗ у держсистемі. Підозрюваний — колишній студент, розробник у сфері блокчейн.">
+  <style>
+    :root {
+      --bg: #f4fbfb;
+      --card: #ffffff;
+      --accent: #0f6b5a;
+      --accent-2: #12b59c;
+      --muted: #556;
+      --danger: #b71c1c;
+      --maxw: 980px;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box }
+    body {
+      font-family: Inter, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      margin: 0;
+      color: #122;
+      line-height: 1.45;
+    }
+    header {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #fff;
+      padding: 22px 16px;
+    }
+    .container {
+      max-width: var(--maxw);
+      margin: 20px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 30px rgba(10,20,20,0.06);
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+    .top {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+    .photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 8px;
+      background: linear-gradient(180deg, #eaf8f4, #fff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    h1 { margin: 0; font-size: 22px }
+    h2 { color: var(--accent); margin: 0 0 8px }
+    .meta { flex: 1 }
+    .small { color: var(--muted); font-size: 14px }
+    .badge {
+      display: inline-block;
+      background: var(--accent-2);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    label { display: block; font-weight: 600; margin-top: 10px }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #e6efee;
+      margin-top: 6px;
+      font-size: 14px;
+    }
+    button {
+      background: var(--accent);
+      color: #fff;
+      border: 0;
+      cursor: pointer;
+    }
+    .note {
+      background: #f0fffb;
+      border-left: 4px solid var(--accent-2);
+      padding: 10px;
+      border-radius: 6px;
+    }
+    ul { margin: 8px 0 0 18px }
+    footer {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+      padding: 18px;
+    }
+    @media(max-width:760px){
+      .top { flex-direction: column }
+      .row { grid-template-columns: 1fr }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <strong>Департамент електронної політики</strong>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <div class="top">
+      <div class="photo">Фото<br>Підозрюваного</div>
+      <div class="meta">
+        <h1>Розшук особи, підозрюваної у встановленні шифрувальника</h1>
+        <div class="small">Оновлено: <strong>09.10.2025</strong></div>
+        <p class="small">Інцидент: встановлення ransomware із розширенням <code>.cryptooooooed</code> у системі регіональної філії Державної служби зайнятості. Інцидент призвів до відмови системи.</p>
+        <div class="badge">Розшук відкрито — просимо не втручатися</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Що відомо</h2>
+    <ul>
+      <li><strong>Дата інциденту:</strong> 13.03.2024</li>
+      <li><strong>Тип вірусу:</strong> шифрувальник з розширенням <code>.cryptooooooed</code></li>
+      <li><strong>Місце подій:</strong> система керівника філії одного з регіональних управлінь</li>
+      <li><strong>Журнали:</strong> один носій викрадено після нападу на адміністратора, другий — збережено</li>
+      <li><strong>Координати події (шифр):</strong> 48.32097234886529, 31.52496131749195</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Досьє на підозрюваного</h2>
+    <ul>
+      <li><strong>ПІБ:</strong> Bogdan Ogorodniy</li>
+      <li><strong>Навчання:</strong> Національний університет ім. Тараса Шевченка, 2021–2025</li>
+      <li><strong>Поточне місце перебування:</strong> Warsaw, Mazowieckie, Польща (за даними LinkedIn)</li>
+      <li><strong>Компанія:</strong> Nethermind — Distributed Systems & Blockchain Engineer</li>
+      <li><strong>Сертифікати:</strong> Cryptography and Information Theory (Coursera), сертифікат LJ75AJNAR65E</li>
+      <li><strong>Волонтерська діяльність:</strong> лектор літнього табору програмування (2019)</li>
+      <li><strong>Нагороди:</strong> бронзові медалі на олімпіадах з інформатики (2019–2021)</li>
+      <li><strong>Мови:</strong> Українська (рідна), Англійська (професійний рівень)</li>
+    </ul>
+    <p class="small">Ця інформація взята з відкритих джерел. Слідство перевіряє її достовірність. Особа вважається невинуватою до рішення суду.</p>
+  </section>
+
+  <section class="card">
+    <h2>Повідомити інформацію</h2>
+    <p class="note">Маєте докази або спостереження? Повідомте через форму нижче або за контактами.</p>
+
+    <form action="/submit-tip" method="post" enctype="multipart/form-data">
+      <label for="type">Тип повідомлення</label>
+      <select id="type" name="type">
+        <option>Відомості про підозрюваного</option>
+        <option>Цифрові докази (логи, скріни)</option>
+        <option>Анонімна інформація</option>
+      </select>
+
+      <label for="message">Опис</label>
+      <textarea id="message" name="message" rows="4" placeholder="Введіть суть повідомлення..."></textarea>
+
+      <div class="row">
+        <div>
+          <label for="name">Ім’я (необов’язково)</label>
+          <input id="name" name="name" type="text" placeholder="Анонім або ім’я">
+        </div>
+        <div>
+          <label for="contact">Контакт (email/телефон)</label>
+          <input id="contact" name="contact" type="text" placeholder="Опціонально">
+       

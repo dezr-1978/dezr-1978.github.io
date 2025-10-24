@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Розшук — Департамент електронної поліції</title>
+<style>
+  :root{--accent:#00457c;--bg:#f6f8fb;--card:#fff;--danger:#c62828}
+  body{font-family:Inter, Arial, sans-serif;background:var(--bg);margin:0;color:#222}
+  header{background:var(--accent);color:#fff;padding:22px 16px}
+  .container{max-width:900px;margin:22px auto;padding:0 16px}
+  .card{background:var(--card);border-radius:10px;box-shadow:0 6px 18px rgba(10,20,40,0.06);padding:18px;margin-bottom:18px}
+  .top{display:flex;gap:18px;align-items:center}
+  .photo{width:150px;height:150px;background:#e6eef8;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#667}
+  .meta{flex:1}
+  h1{margin:0 0 6px;font-size:20px}
+  .small{color:#556;font-size:14px}
+  .timeline{margin-top:12px}
+  .danger{color:var(--danger);font-weight:600}
+  form label{display:block;margin-top:10px;font-weight:600}
+  input, textarea, button, select{width:100%;padding:10px;border-radius:8px;border:1px solid #d7dbe6;margin-top:6px;box-sizing:border-box}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(max-width:640px){.row{grid-template-columns:1fr}.top{flex-direction:column}.photo{width:100%;height:220px}}
+  footer{font-size:13px;color:#556;text-align:center;padding:18px}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <strong>Департамент електронної поліції</strong>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <div class="top">
+      <div class="photo">Фото</div>
+      <div class="meta">
+        <h1>Розшук: підозрюваний у криптошахрайстві</h1>
+        <div class="small">Останнє оновлення: <strong>01.01.2025</strong></div>
+        <p class="timeline">Коротко: особа підозрюється в організації криптомайнінгової схеми та незаконному прив’язуванні платіжних інструментів. Період: <strong>грудень 2024 — січень 2025</strong>.</p>
+        <p class="danger">Не підходити, не контактувати. Телефонуйте поліцію.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Деталі розшуку</h2>
+    <p><strong>Прикмети:</strong> [тут опис]</p>
+    <p><strong>Останнє відоме місце:</strong> [місто/регіон]</p>
+    <p><strong>Класифікація дій:</strong> шахрайство, несанкціонований доступ до інформаційних систем.</p>
+  </section>
+
+  <section class="card">
+    <h2>Повідомити інформацію (анкета)</h2>
+    <form action="/submit-tip" method="post" enctype="multipart/form-data">
+      <label>Тип повідомлення</label>
+      <select name="type"><option>Відома інформація</option><option>Анонімна підказка</option><option>Файли/докази</option></select>
+      <label>Короткий опис</label>
+      <textarea name="message" rows="4" placeholder="Опишіть, що відомо..."></textarea>
+      <div class="row">
+        <div><label>Ім'я (за бажанням)</label><input name="name" type="text" placeholder="Ваше ім'я (необов'язково)"></div>
+        <div><label>Телефон або email</label><input name="contact" type="text" placeholder="Телефон або email (необов'язково)"></div>
+      </div>
+      <label>Завантажити файли (скриншоти, логи)</label>
+      <input name="attachment" type="file" accept=".png,.jpg,.jpeg,.pdf,.zip">
+      <button type="submit" style="margin-top:12px;background:var(--accent);color:#fff;border:0;padding:12px;border-radius:8px">Надіслати повідомлення</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Правова заява</h2>
+    <p>Усі повідомлення обробляються відповідно до законодавства про захист персональних даних. Поширення неправдивої інформації тягне відповідальність.</p>
+    <p class="small">Якщо у вас є великі обсяги даних (лог-файли, розпис транзакцій) — зверніться через захищені канали або особисто до відділення.</p>
+  </section>
+</main>
+
+<footer>
+  © Департамент електронної поліції — Контакт: tips@epolice.gov.ua | Телефон: 0xx-xxx-xxxx
+</footer>
+</body>
+</html>
