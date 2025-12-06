@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serhii Romanishen — Candidat doctorant en informatique</title>
+  <meta name="description" content="Офіційна сторінка-візитка докторанта Serhii Romanishen (Aix-Marseille Université, LIS — CNRS). Тема досліджень: гібридні системи ШІ для оптимізації промислових процесів." />
+  <meta name="author" content="Serhii Romanishen" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Serhii Romanishen — Doctorant en informatique" />
+  <meta property="og:description" content="Лендінг докторанта: тема дисертації, керівництво, фінансування, освіта, контакти." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dezr-1978.github.io/my_site/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #0f172a;          /* slate-900 */
+      --card: #111827;        /* gray-900 */
+      --text: #e5e7eb;        /* gray-200 */
+      --muted: #94a3b8;       /* slate-400 */
+      --accent: #60a5fa;      /* blue-400 */
+      --line: #1f2937;        /* gray-800 */
+      --chip: #0b1225;        /* slightly darker */
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; background: var(--bg); color: var(--text);
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap {
+      max-width: 1024px; margin: 0 auto; padding: 28px 20px 60px;
+    }
+    header {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #0f172a 0%, #0b1225 100%);
+      border-radius: 16px; padding: 28px;
+      display: grid; grid-template-columns: 1fr 220px; gap: 24px;
+      align-items: center;
+    }
+    @media (max-width: 840px) {
+      header { grid-template-columns: 1fr; }
+    }
+    .title h1 { margin: 0 0 8px; font-size: 28px; font-weight: 700; letter-spacing: 0.2px; }
+    .title p { margin: 4px 0; color: var(--muted); }
+    .badge {
+      display: inline-flex; gap: 10px; align-items: center;
+      border: 1px solid var(--line); border-radius: 999px;
+      padding: 8px 14px; background: var(--chip); color: var(--text);
+      font-size: 14px;
+    }
+    .grid {
+      display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 20px;
+    }
+    .card {
+      grid-column: span 12;
+      border: 1px solid var(--line); border-radius: 14px; background: var(--card);
+      padding: 20px;
+    }
+    @media (min-width: 860px) {
+      .span-6 { grid-column: span 6; }
+      .span-4 { grid-column: span 4; }
+      .span-8 { grid-column: span 8; }
+    }
+    h2 { margin: 0 0 12px; font-size: 20px; font-weight: 700; }
+    h3 { margin: 18px 0 8px; font-size: 16px; font-weight: 600; color: var(--text); }
+    .muted { color: var(--muted); }
+    .list { margin: 10px 0 0; padding-left: 18px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .chip {
+      border: 1px solid var(--line); background: var(--chip); color: var(--text);
+      font-size: 13px; padding: 6px 10px; border-radius: 999px;
+    }
+    .kv {
+      display: grid; grid-template-columns: 160px 1fr; gap: 10px; margin: 6px 0;
+    }
+    .kv label { color: var(--muted); }
+    footer {
+      margin-top: 26px; padding-top: 12px; color: var(--muted); font-size: 13px;
+      border-top: 1px dashed var(--line);
+    }
+    .cta {
+      display: inline-block; margin-top: 12px; padding: 10px 14px;
+      border: 1px solid var(--accent); color: var(--text);
+      border-radius: 10px; background: #0b1730;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Hero -->
+    <header>
+      <div class="title">
+        <h1>Serhii Romanishen</h1>
+        <p>Candidat doctorant en informatique — Aix-Marseille Université</p>
+        <p class="muted">UMR7020 LIS — Laboratoire d'Informatique et Systèmes · Marseille, France</p>
+        <div class="chips" aria-label="Ключові напрями">
+          <span class="chip">Hybrid AI</span>
+          <span class="chip">Decision Support Systems</span>
+          <span class="chip">Industrial Optimization</span>
+          <span class="chip">Machine Learning</span>
+        </div>
+      </div>
+      <div style="justify-self: end;">
+        <div class="badge" aria-label="Ідентифікатор">
+          <span style="opacity:.85;">INI</span>
+          <strong>243361596FF</strong>
+        </div>
+        <a class="cta" href="mailto:cweta.nikol@gmail.com">Зв’язатися: cweta.nikol@gmail.com</a>
+      </div>
+    </header>
+
+    <!-- Thesis -->
+    <section class="grid" aria-label="Тема дисертації">
+      <div class="card span-8">
+        <h2>Тема дисертації</h2>
+        <h3>FR</h3>
+        <p><strong>Systèmes intelligents d’aide à la décision pour l’optimisation des processus industriels :</strong> méthodes, applications et analyse des modèles hybrides d’IA.</p>
+        <h3>EN</h3>
+        <p><strong>Intelligent Decision Support Systems for Optimizing Industrial Processes:</strong> Methods, Applications, and Analysis of Hybrid AI Models.</p>
+        <div class="chips">
+          <span class="chip">Hybrid Artificial Intelligence</span>
+          <span class="chip">Decision Support Systems</span>
+          <span class="chip">Industrial Modeling</span>
+          <span class="chip">Performance Analysis</span>
+        </div>
+      </div>
+      <div class="card span-4">
+        <h2>Керівництво</h2>
+        <div class="kv"><label>Керівник</label><div>Prof. Rachid OUTBIB</div></div>
+        <div class="kv"><label>Лабораторія</label><div>LIS — CNRS (UMR7020)</div></div>
+        <div class="kv"><label>Контакт керівника</label><div><a href="mailto:rachid.outbib@lis-lab.fr">rachid.outbib@lis-lab.fr</a></div></div>
+      </div>
+    </section>
+
+    <!-- Funding and Education -->
+    <section class="grid" aria-label="Фінансування та освіта">
+      <div class="card span-6">
+        <h2>Фінансування</h2>
+        <h3>ANR — Intelligent Decision Support Systems</h3>
+        <p class="muted">01.10.2025 → 01.09.2028 · France / ANR</p>
+        <h3>PAUSE — Chercheurs en exil</h3>
+        <p class="muted">01.10.2025 → 30.09.2026 · Collège de France / Programme PAUSE</p>
+      </div>
+      <div class="card span-6">
+        <h2>Освіта</h2>
+        <div class="kv"><label>2021</label><div>Master — Computer Science, КПІ (Kyiv Polytechnic Institute)</div></div>
+        <div class="kv"><label>2021</label><div>Polytechnique — Informatique (КПІ)</div></div>
+        <div class="kv"><label>2017</label><div>Validation d'études et d'expériences — KNEU (Kyiv)</div></div>
+      </div>
+    </section>
+
+    <!-- Focus and Interests -->
+    <section class="grid" aria-label="Інтереси та профіль">
+      <div class="card span-8">
+        <h2>Професійні інтереси</h2>
+        <ul class="list">
+          <li>Академічні дослідження та викладання (практики: 100 годин)</li>
+          <li>R&D у приватному секторі та впровадження інновацій</li>
+          <li>Підтримка стартапів, Spin-Off та технологічна трансферація</li>
+          <li>Експертиза, консалтинг, стратегічна аналітика</li>
+        </ul>
+      </div>
+      <div class="card span-4">
+        <h2>Ідентифікація</h2>
+        <div class="kv"><label>ORCID</label><div><a href="https://orcid.org/0000-0000-9611-849X" target="_blank" rel="noopener">0000-0000-9611-849X</a></div></div>
+        <div class="kv"><label>IdHAL</label><div>serhii-romanishen</div></div>
+        <div class="kv"><label>Наукова область</label><div>Sciences pour l’ingénieur (DS 8) · CNU 27 (Informatique)</div></div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="grid" aria-label="Контакти">
+      <div class="card span-12">
+        <h2>Контакти</h2>
+        <div class="kv"><label>Email</label><div><a href="mailto:cweta.nikol@gmail.com">cweta.nikol@gmail.com</a></div></div>
+        <div class="kv"><label>Телефон</label><div><a href="tel:+33774871992">+33 7 74 87 19 92</a></div></div>
+        <div class="kv"><label>Сайт</label><div><a href="https://dezr-1978.github.io/my_site/" target="_blank" rel="noopener">dezr-1978.github.io/my_site</a></div></div>
+        <div class="kv"><label>LinkedIn</label><div><a href="https://www.linkedin.com/in/serhiiy-romanishen-86269517b" target="_blank" rel="noopener">serhiiy-romanishen-86269517b</a></div></div>
+        <div class="kv"><label>Локація</label><div>Marseille, France</div></div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Serhii Romanishen · Aix-Marseille Université · LIS — CNRS
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
