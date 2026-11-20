@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A.D.U.M. Foundation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#0F172A;
+    --secondary:#1E293B;
+    --accent:#14B8A6;
+    --light:#F8FAFC;
+    --text:#E2E8F0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:#0B1120;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(11,17,32,.95);
+    backdrop-filter:blur(15px);
+    z-index:999;
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.lang-switch button{
+    background:none;
+    border:1px solid var(--accent);
+    color:white;
+    padding:8px 12px;
+    margin-left:6px;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px;
+    background:
+        linear-gradient(rgba(11,17,32,.75),
+        rgba(11,17,32,.95)),
+        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-weight:800;
+}
+
+.hero h2{
+    color:var(--accent);
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:1.25rem;
+    color:#cbd5e1;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.primary{
+    background:var(--accent);
+    color:#fff;
+}
+
+.secondary{
+    border:1px solid var(--accent);
+    color:white;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#162033;
+    border:1px solid rgba(255,255,255,.05);
+    padding:30px;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:var(--accent);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:var(--accent);
+}
+
+.vision{
+    text-align:center;
+    padding:120px 20px;
+    background:#111827;
+}
+
+.vision h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.vision p{
+    font-size:1.2rem;
+    max-width:900px;
+    margin:auto;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#0f172a;
+    color:#94A3B8;
+}
+
+.hidden{
+    display:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <div class="logo">A.D.U.M.</div>
+
+        <div class="lang-switch">
+            <button onclick="setLang('en')">EN</button>
+            <button onclick="setLang('fr')">FR</button>
+            <button onclick="setLang('ua')">UA</button>
+        </div>
+    </div>
+</header>
+
+
+<!-- ENGLISH -->
+
+<div id="en">
+
+<section class="hero">
+<div class="hero-content">
+<h1>A.D.U.M.</h1>
+<h2>Audit of Documents & Unified Metrics</h2>
+
+<p>
+Building a new standard of trust for documents,
+records and digital information.
+</p>
+
+<div class="buttons">
+<a href="#about" class="btn primary">Learn More</a>
+<a href="#" class="btn secondary">Join Initiative</a>
+</div>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2 class="section-title">Our Mission</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Document Audit</h3>
+<p>Independent assessment of quality, compliance, consistency and reliability.</p>
+</div>
+
+<div class="card">
+<h3>Unified Metrics</h3>
+<p>Standardized methodology for evaluating information integrity.</p>
+</div>
+
+<div class="card">
+<h3>Trust Score</h3>
+<p>Transparent rating system based on measurable indicators.</p>
+</div>
+
+<div class="card">
+<h3>Digital Registry</h3>
+<p>Future verification platform for validated documents.</p>
+</div>
+
+</div>
+</section>
+
+<section class="vision">
+<h2>Vision 2030</h2>
+<p>
+Creating a future where trust becomes measurable,
+transparent and universally accessible.
+</p>
+</section>
+
+</div>
+
+
+<!-- FRENCH -->
+
+<div id="fr" class="hidden">
+
+<section class="hero">
+<div class="hero-content">
+<h1>A.D.U.M.</h1>
+<h2>Audit des Documents et Métriques Unifiées</h2>
+
+<p>
+Créer une nouvelle norme de confiance pour les documents
+et les informations numériques.
+</p>
+
+<div class="buttons">
+<a href="#about" class="btn primary">En savoir plus</a>
+<a href="#" class="btn secondary">Rejoindre</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Notre Mission</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Audit Documentaire</h3>
+<p>Évaluation indépendante de la qualité et de la conformité.</p>
+</div>
+
+<div class="card">
+<h3>Métriques Unifiées</h3>
+<p>Normes transparentes pour évaluer l'intégrité documentaire.</p>
+</div>
+
+<div class="card">
+<h3>Indice de Confiance</h3>
+<p>Système de notation fondé sur des critères mesurables.</p>
+</div>
+
+<div class="card">
+<h3>Registre Numérique</h3>
+<p>Future plateforme de vérification documentaire.</p>
+</div>
+
+</div>
+</section>
+
+<section class="vision">
+<h2>Vision 2030</h2>
+<p>
+Rendre la confiance mesurable, transparente et accessible à tous.
+</p>
+</section>
+
+</div>
+
+
+<!-- UKRAINIAN -->
+
+<div id="ua" class="hidden">
+
+<section class="hero">
+<div class="hero-content">
+<h1>А.Д.У.М.</h1>
+<h2>Аудит Документів та Уніфікованих Метрик</h2>
+
+<p>
+Створюємо новий стандарт довіри до документів,
+даних та цифрової інформації.
+</p>
+
+<div class="buttons">
+<a href="#about" class="btn primary">Дізнатися більше</a>
+<a href="#" class="btn secondary">Приєднатися</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Наша Місія</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Аудит Документів</h3>
+<p>Незалежна оцінка якості, відповідності та достовірності.</p>
+</div>
+
+<div class="card">
+<h3>Уніфіковані Метрики</h3>
+<p>Єдиний стандарт оцінювання інформації та документів.</p>
+</div>
+
+<div class="card">
+<h3>Індекс Довіри</h3>
+<p>Прозора система рейтингу на основі об'єктивних показників.</p>
+</div>
+
+<div class="card">
+<h3>Цифровий Реєстр</h3>
+<p>Майбутня система верифікації документів.</p>
+</div>
+
+</div>
+</section>
+
+<section class="vision">
+<h2>Бачення 2030</h2>
+<p>
+Світ, у якому довіра стане вимірюваною,
+прозорою та доступною кожному.
+</p>
+</section>
+
+</div>
+
+<footer>
+© 2026 A.D.U.M. Foundation
+<br>
+Trust Measured. Transparency Verified.
+</footer>
+
+
+<script>
+function setLang(lang){
+
+document.getElementById('en').classList.add('hidden');
+document.getElementById('fr').classList.add('hidden');
+document.getElementById('ua').classList.add('hidden');
+
+document.getElementById(lang).classList.remove('hidden');
+
+}
+</script>
+
+</body>
+</html>
